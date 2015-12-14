@@ -3,5 +3,5 @@
 var createWebpackConfig = require('./bin/create-webpack-config');
 
 module.exports = createWebpackConfig({
-  dev: false
+  dev: true
 });
