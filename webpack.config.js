@@ -1,14 +1,15 @@
 module.exports = {
- entry: ["./global.js" , "./app.js"],
+ entry: ["./global.js" , "./src/index.js"],
  output: {
-   filename: "bundle.js"
+   filename: "./dist/bundle.js"
  },
  module: {
    loaders: [
      {
        test: [/\.js$/, /\.es6$/],
        exclude: /node_modules/,
-       loader: 'babel-loader'
+       loader: 'babel-loader',
+       query:{presets:['es2015', 'react']}
      }
    ]
  },

@@ -76,7 +76,8 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	_reactDom2.default.render(_react2.default.createElement(Hello, { name: 'World' }), document.body);
+	var rootElm = document.getElementById('root');
+	_reactDom2.default.render(_react2.default.createElement(_Main2.default, { name: 'World' }), rootElm);
 
 /***/ },
 /* 3 */
